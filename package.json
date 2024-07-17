@@ -1,5 +1,6 @@
 {
     "name": "stripe-sample",
+    "main": "server.js",
     "version": "0.2.0",
     "dependencies": {
         "@stripe/connect-js": "3.3.5",
