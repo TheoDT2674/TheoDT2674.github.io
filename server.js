@@ -3,7 +3,7 @@ const app = express();
 
 const stripe = require("stripe")(
   // This is your test secret API key.
-  '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',
+  SECRET_STRIPE,
   {
     apiVersion: "2023-10-16",
   }
