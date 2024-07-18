@@ -3,7 +3,7 @@ const app = express();
 
 const stripe = require("stripe")(
   // This is your test secret API key.
-  SECRET_STRIPE,
+  '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',
   {
     apiVersion: "2023-10-16",
   }
@@ -67,4 +67,8 @@ app.get("/*", (_req, res) => {
   res.sendFile(__dirname + "/dist/index.html");
 });
 
-app.listen(4242, () => console.log("Node server listening on port 4242! Visit http://localhost:4242 in your browser."));
+var server = app.listen(process.env.PORT || 3000, function () {
+  var host = server.address().address
+  var port = server.address().port
+  console.log('App listening at https://%s:%s', host, port)
+})

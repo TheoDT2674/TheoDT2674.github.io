@@ -1,45 +1,23 @@
 {
-    "name": "stripe-sample",
-    "main": "server.js",
-    "version": "0.2.0",
-    "dependencies": {
-        "@stripe/connect-js": "3.3.5",
-        "@stripe/react-connect-js": "3.3.7",
-        "express": "^4.19.2",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-router-dom": "^6.4.0",
-        "react-scripts": "^3.4.0",
-        "stripe": "13.5.0-beta.1"
-    },
-    "devDependencies": {
-        "concurrently": "4.1.2",
-        "parcel": "^2.8.3"
-    },
-    "homepage": ".",
-    "proxy": ".",
-    "source": "public/index.html",
-    "scripts": {
-        "start-client": "parcel watch",
-        "start-server": "node server.js",
-        "build": "parcel build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "start": "concurrently \"yarn start-client\" \"yarn start-server\""
-    },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    }
+  "name": "stripe-sample-code",
+  "version": "1.0.0",
+  "description": "Build a full, working Connect integration. Here are some basic scripts you can use to build and run the application.",
+  "scripts": {
+    "start-client": "parcel watch",
+    "start-server": "node server.js",
+    "start": "concurrently \"yarn start-client\" \"yarn start-server\"",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "4.1.2",
+    "parcel": "^2.8.3"
+  },
+  "source": "public/index.html",
+  "dependencies": {
+    "express": "^4.17.1",
+    "stripe": "13.4.0",
+    "@stripe/connect-js": "3.3.5"
+  }
 }
